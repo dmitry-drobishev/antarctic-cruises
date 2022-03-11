@@ -10,16 +10,24 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container">
-
-          <svg class="social__icon" width="20" height="16" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#twitter"></use>
+      <header class="header">
+        <div class="header__wrapper">
+          <svg class="header__logo" width="70" height="38">
+            <use xlink:href="img/sprite_auto.svg#header-logo"></use>
           </svg>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">Преимущества</li>
+              <li class="header__nav-item">Направления</li>
+              <li class="header__nav-item">Ближайшие круизы</li>
+              <li class="header__nav-item">Контакты</li>
+            </ul>
+          </nav>
+
         </div>
       </header>
       <main>
-        <section class="intro">
+        <!-- <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>
             <p>На данной странице показан пример модальных окон.</p>
@@ -30,13 +38,13 @@
               <use xlink:href="../img/sprite-auto.svg#twitter"></use>
             </svg>
           </div>
-        </section>
+        </section> -->
       </main>
       <footer>
         <div class="container"></div>
       </footer>
     </div>
-    <div class="modal modal--preload" data-modal="feedback">
+    <!-- <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -62,9 +70,9 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <!-- <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script> -->
   </body>
 </html>

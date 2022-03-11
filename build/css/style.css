@@ -387,9 +387,33 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Montserrat";
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2"), url("../fonts/.woff") format("woff");
+  src: url("../fonts/montserrat-regular-400.woff2") format("woff2"), url("../fonts/montserrat-regular-400.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/montserrat-medium-500.woff2") format("woff2"), url("../fonts/montserrat-medium-500.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/montserrat-semi-bold-600.woff2") format("woff2"), url("../fonts/montserrat-semi-bold-600.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url("../fonts/montserrat-bold-700.woff2") format("woff2"), url("../fonts/montserrat-bold-700.woff") format("woff");
 }
 
 *,
@@ -750,6 +774,25 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.header {
+  background-color: #011C40;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__nav-list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 33px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

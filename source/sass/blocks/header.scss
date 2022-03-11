@@ -1,0 +1,16 @@
+.header{
+  background-color: #011C40;
+}
+.header__logo {
+  display: block;
+}
+
+.header__nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+
+// .header__nav-item
