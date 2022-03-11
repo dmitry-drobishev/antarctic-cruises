@@ -8,6 +8,12 @@
   min-height: calc(100 * var(--vh, 1vh));
   overflow: hidden;
 
+
+  font-family: $ff-montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
   .header,
   .footer {
     flex-shrink: 0;

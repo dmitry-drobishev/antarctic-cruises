@@ -1,0 +1,67 @@
+.about {
+  width: $desktop-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 88px;
+  padding: 120px 0;
+
+  @include vp-1279 {
+    gap: 30px;
+    width: auto;
+    padding: 100px 45px;
+  }
+
+  @include vp-767 {
+    padding: 65px 15px 40px 15px;
+    flex-direction: column;
+  }
+
+  img {
+    display: block;
+    width: 560px;
+    height: 301px;
+
+    @include vp-1279 {
+      width: 324px;
+      height: 264px;
+    }
+
+    @include vp-767 {
+      width: 290px;
+      height: 186px;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+.about__information {
+  h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    margin: 0;
+
+    @include vp-1279 {
+      font-size: 26px;
+      line-height: 36px;
+    }
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 40px;
+
+    @include vp-1279 {
+      margin-top: 30px;
+    }
+  }
+}
