@@ -11,12 +11,6 @@ body {
 }
 
 html {
-  font-style: normal;
-  font-weight: 400;
-  font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,6 +25,13 @@ body {
   height: 100%;
 
   background-color: $color-default-white;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fz-default;
+  line-height: 24px;
+  font-family: $ff-placeholder;
+  color: $color-default-black;
 }
 
 a {
