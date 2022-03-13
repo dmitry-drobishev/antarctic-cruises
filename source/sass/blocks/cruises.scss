@@ -31,7 +31,6 @@
       height: 36px;
     }
   }
-
 }
 
 .cruises__list {
@@ -109,20 +108,6 @@
 
   h3 {
     position: static;
-  }
-
-  button {
-    display: block;
-    padding: 15px;
-    border: none;
-    background-color: $color-extra-light-grey;
-    font-family: $ff-montserrat;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    color: $color-extra-dark;
-    width: 210px;
-    margin: 0 auto;
   }
 }
 

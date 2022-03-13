@@ -11,6 +11,16 @@
   <body>
     <div class="wrapper">
       <header class="header">
+
+        <picture>
+          <!-- <source media="(min-width: 768px)" srcset="./img/header/header-mobile.webp 1x, ./img/header/header-mobile@2x.webp 2x"> -->
+          <source media="(max-width: 767px)" srcset="./img/header/header-mobile.jpg 1x, ./img/header/header-mobile@2x.jpg 2x">
+          <!-- <source media="(min-width: 1280px)" srcset="./img/header/header-tablet.webp 1x, ./img/header/header-tablet@2x.webp 2x"> -->
+          <source media="(max-width: 1279px)" srcset="./img/header/header-tablet.jpg 1x, ./img/header/header-tablet@2x.jpg 2x">
+          <!-- <source type="image/webp" srcset="./img/header/header-desktop.webp 1x, ./img/header/header-desktop@2x.webp 2x"> -->
+          <img src="./img/header/header-desktop.jpg" srcset="./img/header/header-desktop@2x.jpg" height="650" alt="фоновое изображение">
+        </picture>
+
         <div class="header__wrapper">
           <svg class="header__logo" width="70" height="38">
             <use xlink:href="img/sprite_auto.svg#header-logo"></use>
@@ -23,16 +33,16 @@
 
             <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a href="#">Преимущества</a>
+                <a href="#advantages">Преимущества</a>
               </li>
               <li class="header__nav-item">
                 <a href="#">Направления</a>
               </li>
               <li class="header__nav-item">
-                <a href="#">Ближайшие круизы</a>
+                <a href="#next-cruises">Ближайшие круизы</a>
               </li>
               <li class="header__nav-item">
-                <a href="#">Контакты</a>
+                <a href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -50,18 +60,17 @@
             <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
           </div>
 
-        <picture>
-          <!-- <source media="(min-width: 768px)" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x"> -->
-          <source media="(max-width: 767px)" srcset="./img/about/about-mobile.jpg 1x, ./img/about/about-mobile@2x.jpg 2x">
-          <!-- <source media="(min-width: 1280px)" srcset="./img/about/about-tablet.webp 1x, ./img/about/about-tablet@2x.webp 2x"> -->
-          <source media="(max-width: 1279px)" srcset="./img/about/about-tablet.jpg 1x, ./img/about/about-tablet@2x.jpg 2x">
-          <!-- <source type="image/webp" srcset="./img/about/about-desktop.webp 1x, ./img/about/about-desktop@2x.webp 2x"> -->
-          <img src="./img/about/about-desktop.jpg" srcset="./img/about/about-desktop@2x.jpg" width="560" height="301" alt="пингвины">
-        </picture>
-
+          <picture>
+            <!-- <source media="(min-width: 768px)" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x"> -->
+            <source media="(max-width: 767px)" srcset="./img/about/about-mobile.jpg 1x, ./img/about/about-mobile@2x.jpg 2x">
+            <!-- <source media="(min-width: 1280px)" srcset="./img/about/about-tablet.webp 1x, ./img/about/about-tablet@2x.webp 2x"> -->
+            <source media="(max-width: 1279px)" srcset="./img/about/about-tablet.jpg 1x, ./img/about/about-tablet@2x.jpg 2x">
+            <!-- <source type="image/webp" srcset="./img/about/about-desktop.webp 1x, ./img/about/about-desktop@2x.webp 2x"> -->
+            <img src="./img/about/about-desktop.jpg" srcset="./img/about/about-desktop@2x.jpg" width="560" height="301" alt="пингвины">
+          </picture>
         </section>
 
-        <section class="advantages">
+        <section class="advantages" id="advantages">
 
           <picture>
             <source media="(max-width: 767px)" srcset="./img/advantages/advantages-mobile.jpg 1x, ./img/advantages/advantages-mobile@2x.jpg 2x">
@@ -70,11 +79,6 @@
             <!-- <source type="image/webp" srcset="./img/catalog/product-card-1-mobile.webp 1x, ./img/catalog/product-card-1-mobile@2x.webp 2x"> -->
             <img class="advantages__background" src="./img/advantages/advantages-desktop.jpg" srcset="./img/advantages/advantages-desktop@2x.jpg 2x" alt="фоновое изображение" width="1366px" height="562px">
           </picture>
-
-
-          <!-- <img class="advantages__background" src="./img/advantages/advantages-desktop.jpg" width="1366px" height="562px" alt="фоновое изображение"> -->
-
-
 
           <div class="advantages__wrapper">
             <h2>Преимущества</h2>
@@ -100,7 +104,7 @@
           </div>
         </section>
 
-        <section class="cruises">
+        <section class="cruises" id="next-cruises">
 
           <h2>Ближайшие круизы</h2>
 
@@ -142,7 +146,7 @@
                   </li>
                 </ul>
 
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
             </li>
 
@@ -183,7 +187,7 @@
                   </li>
                 </ul>
 
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
             </li>
 
@@ -197,8 +201,6 @@
                 <!-- <source type="image/webp" srcset="./img/cruises/cruise-card-3-desktop.webp 1x, ./img/cruises/cruise-card-3-desktop@2x.webp 2x"> -->
                 <img src="./img/cruises/cruise-card-3-desktop.jpg" srcset="./img/cruises/cruise-card-3-desktop@2x.jpg 2x" alt="фоновое изображение" width="260" height="386">
               </picture>
-
-
 
               <div class="cruises__booking">
 
@@ -226,7 +228,7 @@
                   </li>
                 </ul>
 
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
             </li>
 
@@ -240,8 +242,6 @@
                 <!-- <source type="image/webp" srcset="./img/cruises/cruise-card-4-desktop.webp 1x, ./img/cruises/cruise-card-4-desktop@2x.webp 2x"> -->
                 <img src="./img/cruises/cruise-card-4-desktop.jpg" srcset="./img/cruises/cruise-card-4-desktop@2x.jpg 2x" alt="фоновое изображение" width="260" height="386">
               </picture>
-
-
 
               <div class="cruises__booking">
 
@@ -269,7 +269,7 @@
                   </li>
                 </ul>
 
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
             </li>
 
@@ -283,8 +283,6 @@
                 <!-- <source type="image/webp" srcset="./img/cruises/cruise-card-5-desktop.webp 1x, ./img/cruises/cruise-card-5-desktop@2x.webp 2x"> -->
                 <img src="./img/cruises/cruise-card-5-desktop.jpg" srcset="./img/cruises/cruise-card-5-desktop@2x.jpg 2x" alt="фоновое изображение" width="260" height="386">
               </picture>
-
-
 
               <div class="cruises__booking">
 
@@ -312,7 +310,7 @@
                   </li>
                 </ul>
 
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
             </li>
 
@@ -326,8 +324,6 @@
                 <!-- <source type="image/webp" srcset="./img/cruises/cruise-card-6-desktop.webp 1x, ./img/cruises/cruise-card-6-desktop@2x.webp 2x"> -->
                 <img src="./img/cruises/cruise-card-6-desktop.jpg" srcset="./img/cruises/cruise-card-6-desktop@2x.jpg 2x" alt="фоновое изображение" width="260" height="386">
               </picture>
-
-
 
               <div class="cruises__booking">
 
@@ -355,7 +351,7 @@
                   </li>
                 </ul>
 
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
             </li>
 
@@ -369,8 +365,6 @@
                 <!-- <source type="image/webp" srcset="./img/cruises/cruise-card-7-desktop.webp 1x, ./img/cruises/cruise-card-7-desktop@2x.webp 2x"> -->
                 <img src="./img/cruises/cruise-card-7-desktop.jpg" srcset="./img/cruises/cruise-card-7-desktop@2x.jpg 2x" alt="фоновое изображение" width="260" height="386">
               </picture>
-
-
 
               <div class="cruises__booking">
 
@@ -398,7 +392,7 @@
                   </li>
                 </ul>
 
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
             </li>
 
@@ -412,8 +406,6 @@
                 <!-- <source type="image/webp" srcset="./img/cruises/cruise-card-8-desktop.webp 1x, ./img/cruises/cruise-card-8-desktop@2x.webp 2x"> -->
                 <img src="./img/cruises/cruise-card-8-desktop.jpg" srcset="./img/cruises/cruise-card-8-desktop@2x.jpg 2x" alt="фоновое изображение" width="260" height="386">
               </picture>
-
-
 
               <div class="cruises__booking">
 
@@ -441,15 +433,69 @@
                   </li>
                 </ul>
 
-                <button type="button">Забронировать</button>
+                <button class="button" type="button">Забронировать</button>
               </div>
             </li>
           </ul>
         </section>
 
+        <section class="booking">
+
+          <h2 class="visually-hidden">Бронирование</h2>
+
+          <picture>
+            <!-- <source media="(max-width: 767px)" srcset="./img/booking/booking-mobile.webp 1x, ./img/booking/booking-mobile@2x.webp 2x"> -->
+            <source media="(max-width: 767px)" srcset="./img/booking/booking-mobile.jpg 1x, ./img/booking/booking-mobile@2x.jpg 2x">
+            <!-- <source media="(max-width: 1279px)" srcset="./img/booking/booking-tablet.webp 1x, ./img/booking/booking-tablet@2x.webp 2x"> -->
+            <source media="(max-width: 1279px)" srcset="./img/booking/booking-tablet.jpg 1x, ./img/booking/booking-tablet@2x.jpg 2x">
+            <!-- <source type="image/webp" srcset="./img/booking/booking-desktop.webp 1x, ./img/booking/booking-desktop@2x.webp 2x"> -->
+            <img src="./img/booking/booking-desktop.jpg" srcset="./img/booking/booking-desktop@2x.jpg 2x" alt="фоновое изображение" width="1366" height="555">
+          </picture>
+
+          <div class="booking__wrapper">
+            <div class="booking__title">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+            </div>
+
+            <div class="booking__form">
+
+              <form action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
+
+                <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+
+                <ul class="booking__form-list">
+
+                  <li class="booking__form-item">
+                    <label class="visually-hidden" for="name">Имя</label>
+                    <input type="text" id="name" name="name_user" placeholder="Имя">
+                  </li>
+
+                  <li class="booking__form-item">
+                    <label class="visually-hidden" for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone-number" placeholder="Телефон">
+                  </li>
+
+                  <li class="booking__form-item">
+                    <label class="visually-hidden" for="mail">E-mail</label>
+                    <input type="email" id="mail" name="e-mail" placeholder="Email">
+                  </li>
+                </ul>
+
+                <div class="booking__checkbox">
+                  <input type="checkbox" id="personal-data" name="personal-data-checkbox" checked>
+                  <label for="personal-data">Я согласен на обработку моих персональных данных</label>
+                </div>
+
+                <button class="button" type="submit">Отправить заявку</button>
+              </form>
+            </div>
+          </div>
+        </section>
 
 
-        <section class="contacts">
+
+        <section class="contacts" id="contacts">
 
           <h2 class="visually-hidden">Контакты</h2>
 
@@ -470,18 +516,6 @@
             <a href="tel:+78002000000">8-800-200-00-00</a>
           </div>
         </section>
-        <!-- <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-            <svg class="social__icon" width="20" height="16" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="../img/sprite-auto.svg#twitter"></use>
-            </svg>
-          </div>
-        </section> -->
       </main>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
@@ -534,46 +568,8 @@
 
       </footer>
     </div>
-    <!-- <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script> -->
-    <script src="js/menu.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
-
-
-<!-- <picture> -->
-  <!-- <source media="(min-width: 768px)" srcset="./img/about/about-mobile.webp 1x, ./img/about/about-mobile@2x.webp 2x"> -->
-  <!-- <source media="(max-width: 768px)" srcset="./img/about/about-mobile.jpg 1x, ./img/about/about-mobile@2x.jpg 2x"> -->
-  <!-- <source media="(min-width: 1280px)" srcset="./img/about/about-tablet.webp 1x, ./img/about/about-tablet@2x.webp 2x"> -->
-  <!-- <source media="(max-width: 1280px)" srcset="./img/about/about-tablet.jpg 1x, ./img/about/about-tablet@2x.jpg 2x"> -->
-  <!-- <source type="image/webp" srcset="./img/about/about-desktop.webp 1x, ./img/about/about-desktop@2x.webp 2x"> -->
-  <!-- <img class="about__img" src="./img/about/about-desktop.jpg" srcset="./img/about/about-desktop@2x.jpg" width="560" height="301" alt="пингвины"> -->
-<!-- </picture> -->

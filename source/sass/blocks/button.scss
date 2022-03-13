@@ -1,0 +1,13 @@
+.button {
+  display: block;
+  padding: 15px;
+  border: none;
+  background-color: $color-extra-light-grey;
+  font-family: $ff-montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-extra-dark;
+  width: 100%;
+  cursor: pointer;
+}

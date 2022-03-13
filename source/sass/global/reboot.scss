@@ -11,7 +11,7 @@ body {
 }
 
 html {
-
+  scroll-behavior: smooth; // плавная прокрутка по якорю
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // оптимизация выравнивания шрифта относительно центра строки
@@ -22,6 +22,7 @@ html {
 
 body {
   width: 100%;
+  min-width: 320px;
   height: 100%;
 
   background-color: $color-default-white;
