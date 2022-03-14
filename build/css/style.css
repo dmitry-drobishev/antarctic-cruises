@@ -815,6 +815,10 @@ button,
   height: 38px;
 }
 
+.header__logo--hidden {
+  display: none;
+}
+
 .header__nav {
   margin-right: 0;
   margin-left: auto;
@@ -880,21 +884,24 @@ button,
   display: none;
 }
 
-.header__toggle--open {
+.header__toggle--close {
+  width: 24px;
+  height: 12px;
   background-image: url("../img/header/burger.svg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
+  z-index: 100;
 }
 
-.header__toggle--close {
+.header__toggle--open {
   width: 13px;
   height: 13px;
   background-image: url("../img/header/close.svg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
-  background-color: transparent;
+  z-index: 100;
 }
 
 .page-footer {
@@ -977,9 +984,10 @@ button,
 .about {
   width: 1160px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 560px;
+  grid-template-columns: auto 560px;
   gap: 88px;
   padding: 120px 0;
 }
@@ -988,6 +996,12 @@ button,
   display: block;
   width: 560px;
   height: 301px;
+}
+
+.about__information {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .about__information h3 {
@@ -1572,6 +1586,8 @@ button,
     gap: 30px;
     width: auto;
     padding: 100px 45px;
+    -ms-grid-columns: auto 324px;
+    grid-template-columns: auto 324px;
   }
 
   .about img {
@@ -1754,10 +1770,16 @@ button,
     padding: 20px 15px;
   }
 
+  .header__logo {
+    width: 42px;
+    height: 22px;
+  }
+
   .header__nav--open {
     margin: 0;
     position: absolute;
     width: 280px;
+    height: 100%;
     right: 0;
     top: 0;
     z-index: 10;
@@ -1812,14 +1834,12 @@ button,
 
   .header__toggle {
     display: block;
-    height: 12px;
-    width: 24px;
     border: none;
     cursor: pointer;
-    background-color: transparent;
     position: absolute;
     top: 25px;
     right: 15px;
+    background-color: transparent;
   }
 
   .page-footer {
@@ -1857,6 +1877,10 @@ button,
 
   .about {
     padding: 65px 15px 40px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1941,6 +1965,8 @@ button,
 
   .booking img {
     height: 760px;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
   }
 
   .booking__wrapper {
