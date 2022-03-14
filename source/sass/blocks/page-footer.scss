@@ -89,7 +89,7 @@
   margin: 0;
   margin-left: auto;
   display: flex;
-  gap: 23px;
+  gap: 33px;
 
   @include vp-767 {
     margin-left: 0;
@@ -99,7 +99,7 @@
 .page-footer__social-item {
   a {
     display: block;
-    padding: 5px;
+    // padding: 5px;
   }
 
   &--facebook svg {

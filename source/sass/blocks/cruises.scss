@@ -1,7 +1,7 @@
 .cruises {
   width: $desktop-content;
   box-sizing: border-box;
-  padding: 120px 15px;
+  padding: 110px 15px 120px 15px;
   margin: 0 auto;
   position: relative;
 
@@ -37,7 +37,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 60px;
+  margin-top: 50px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -69,7 +69,7 @@
     color: $color-extra-light-grey;
     position: absolute;
     left: 30px;
-    bottom: 30px;
+    bottom: 22px;
   }
 
   img {

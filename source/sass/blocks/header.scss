@@ -138,6 +138,7 @@
     font-size: 16px;
     line-height: 20px;
     color: $color-extra-light-grey;
+    padding-top: 10px;
 
     @include vp-1279 {
       font-size: 14px;
@@ -170,7 +171,7 @@
     line-height: 66px;
     color: $color-extra-light-grey;
     margin: 0;
-    margin-top: 210px;
+    margin-top: 160px;
 
     @include vp-1279 {
       font-size: 50px;
@@ -190,7 +191,7 @@
     line-height: 24px;
     color: $color-extra-light-grey;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 15px;
 
     @include vp-1279 {
       font-size: 18px;

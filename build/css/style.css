@@ -850,6 +850,7 @@ button,
   font-size: 16px;
   line-height: 20px;
   color: #f9fbfd;
+  padding-top: 10px;
 }
 
 .header__promo {
@@ -864,7 +865,7 @@ button,
   line-height: 66px;
   color: #f9fbfd;
   margin: 0;
-  margin-top: 210px;
+  margin-top: 160px;
 }
 
 .header__promo p {
@@ -873,7 +874,7 @@ button,
   line-height: 24px;
   color: #f9fbfd;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .header__toggle {
@@ -958,12 +959,11 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 23px;
+  gap: 33px;
 }
 
 .page-footer__social-item a {
   display: block;
-  padding: 5px;
 }
 
 .page-footer__social-item--facebook svg {
@@ -1016,7 +1016,7 @@ button,
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .advantages {
@@ -1049,7 +1049,7 @@ button,
 .advantages__wrapper {
   width: 1160px;
   margin: 0 auto;
-  padding: 120px 0 120px 0;
+  padding: 110px 0 110px 0;
 }
 
 .advantages__list {
@@ -1060,7 +1060,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .advantages__item {
@@ -1068,7 +1068,7 @@ button,
   min-height: 241px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 87px 30px 50px 30px;
+  padding: 80px 30px 25px 30px;
   position: relative;
   background-color: #f9fbfd;
 }
@@ -1091,7 +1091,7 @@ button,
   font-size: 14px;
   line-height: 20px;
   margin: 0;
-  margin-top: 18px;
+  margin-top: 9px;
 }
 
 .advantages__item--cruise img {
@@ -1122,7 +1122,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 100px;
-  padding: 120px 0;
+  padding: 120px 0 115px 0;
 }
 
 .contacts__map-wrapper {
@@ -1153,7 +1153,7 @@ button,
 
 .contacts__information address {
   font-style: normal;
-  margin-top: 45px;
+  margin-top: 32px;
   margin-left: 28px;
   font-weight: 400;
   font-size: 16px;
@@ -1172,7 +1172,7 @@ button,
 
 .contacts__information a {
   display: block;
-  margin-top: 33px;
+  margin-top: 22px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1193,7 +1193,7 @@ button,
   width: 1160px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 120px 15px;
+  padding: 110px 15px 120px 15px;
   margin: 0 auto;
   position: relative;
 }
@@ -1210,7 +1210,7 @@ button,
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 60px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1233,7 +1233,7 @@ button,
   color: #f9fbfd;
   position: absolute;
   left: 30px;
-  bottom: 30px;
+  bottom: 22px;
 }
 
 .cruises__item img {
@@ -1321,8 +1321,7 @@ button,
 .booking__wrapper {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 50px;
-  padding-top: 50px;
+  padding: 0 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1332,7 +1331,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  gap: 50px;
+  gap: 30px;
   height: 555px;
 }
 
@@ -1349,13 +1348,16 @@ button,
   line-height: 27px;
   width: 360px;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .booking__form {
   width: 403px;
   height: 455px;
   padding: 50px;
+  padding-top: 44px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #011c40;
 }
 
@@ -1378,14 +1380,14 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 35px;
+  gap: 21px;
+  margin-top: 27px;
 }
 
 .booking__form-item input {
   border: none;
   background-color: #f9fbfd;
-  padding: 11px 16px;
+  padding: 13px 16px;
   width: 100%;
 }
 
@@ -1425,8 +1427,8 @@ button,
 }
 
 .booking__checkbox {
-  margin-top: 25px;
-  margin-bottom: 35px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   position: relative;
 }
 
@@ -1463,7 +1465,7 @@ button,
 
 .button {
   display: block;
-  padding: 15px;
+  padding: 13px;
   border: none;
   background-color: #f9fbfd;
   font-family: "Montserrat", "Arial", sans-serif;
