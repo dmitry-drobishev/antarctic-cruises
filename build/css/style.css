@@ -1253,7 +1253,7 @@ button,
   min-height: 386px;
   background-color: #011c40;
   color: #f9fbfd;
-  padding: 35px 25px;
+  padding: 28px 26px;
 }
 
 .cruises__booking:focus-within {
@@ -1270,8 +1270,8 @@ button,
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 25px;
-  margin-bottom: 30px;
+  margin-top: 14px;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1279,7 +1279,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 20px;
+  gap: 11px;
 }
 
 .cruises__booking-item h4 {
@@ -1291,7 +1291,7 @@ button,
 
 .cruises__booking-item p {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 1px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1475,6 +1475,7 @@ button,
   color: #011c40;
   width: 100%;
   cursor: pointer;
+  text-align: center;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
