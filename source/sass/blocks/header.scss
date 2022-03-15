@@ -9,6 +9,18 @@
     height: 500px;
   }
 
+  a {
+    @media(min-width: $vp-768) {
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+
   img {
     position: absolute;
     width: 100vw;
@@ -39,8 +51,7 @@
     width: 768px;
     padding: $tablet-padding;
     box-sizing: border-box;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 30px;
   }
 
   @include vp-767 {
@@ -118,7 +129,7 @@
   flex-wrap: wrap;
 
   @include vp-1279 {
-    gap: 23px;
+    gap: 24px;
   }
 
   @include vp-767 {
@@ -143,6 +154,7 @@
     @include vp-1279 {
       font-size: 14px;
       line-height: 17px;
+      padding-top: 3px;
     }
 
     @include vp-767 {
@@ -176,7 +188,7 @@
     @include vp-1279 {
       font-size: 50px;
       line-height: 61px;
-      margin-top: 230px;
+      margin-top: 220px;
     }
 
     @include vp-767 {
@@ -196,6 +208,7 @@
     @include vp-1279 {
       font-size: 18px;
       line-height: 22px;
+      margin-top: 10px;
     }
 
     @include vp-767 {

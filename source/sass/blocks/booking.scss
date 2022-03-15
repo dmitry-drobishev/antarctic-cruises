@@ -34,8 +34,8 @@
   @include vp-1279 {
     width: auto;
     flex-direction: column;
-    gap: 60px;
-    padding-top: 100px;
+    gap: 52px;
+    padding-top: 90px;
     justify-content: start;
     height: 805px;
   }
@@ -77,7 +77,8 @@
     margin-top: 10px;
 
     @include vp-1279 {
-      margin-top: 25px;
+      margin: 0 auto;
+      margin-top: 3px;
       font-size: 18px;
       line-height: 27px;
       text-align: center;

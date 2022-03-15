@@ -7,9 +7,12 @@
   padding: 120px 0 115px 0;
 
   @include vp-1279 {
+    align-items: flex-start;
     width: auto;
+    padding-top: 100px;
     padding-left: 45px;
     padding-right: 45px;
+    padding-bottom: 96px;
     gap: 30px;
   }
 
@@ -60,6 +63,9 @@
 }
 
 .contacts__information {
+  @include vp-1279 {
+    margin-top: 65px;
+  }
   p {
     margin: 0;
     font-weight: 500;
@@ -83,6 +89,14 @@
       height: 22px;
       background: url("/img/contacts/point-on-map-icon.svg") no-repeat;
       left: -28px;
+
+      @include vp-1279 {
+        top: 7px;
+      }
+    }
+
+    @include vp-1279 {
+      margin-top: 27px;
     }
   }
 
@@ -102,6 +116,16 @@
       height: 18px;
       background: url("/img/contacts/phone-icon.svg") no-repeat;
       left: -28px;
+    }
+
+    @media(min-width: $vp-768) {
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }

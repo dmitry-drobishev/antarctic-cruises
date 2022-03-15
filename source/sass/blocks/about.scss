@@ -9,7 +9,7 @@
   @include vp-1279 {
     gap: 30px;
     width: auto;
-    padding: 100px 45px;
+    padding: 100px 45px 85px 45px;
     grid-template-columns: auto 324px;
   }
 
@@ -39,7 +39,12 @@
 }
 
 .about__information {
-  align-self: center;
+
+  @include vp-1279 {
+    position: relative;
+    top: -8px;
+  }
+
   h3 {
     font-weight: 600;
     font-size: 28px;
@@ -49,6 +54,7 @@
     @include vp-1279 {
       font-size: 26px;
       line-height: 36px;
+      width: 220px;
     }
 
     @include vp-767 {
@@ -65,7 +71,7 @@
     margin-top: 24px;
 
     @include vp-1279 {
-      margin-top: 30px;
+      margin-top: 15px;
     }
   }
 }
