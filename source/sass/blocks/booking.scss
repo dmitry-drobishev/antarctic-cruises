@@ -41,8 +41,8 @@
   }
 
   @include vp-767 {
-    padding: 65px 15px 0 15px;
-    gap: 40px;
+    padding: 59px 15px 0 15px;
+    gap: 35px;
     height: 760px;
   }
 }
@@ -89,7 +89,7 @@
       line-height: 22px;
       width: 260px;
       margin: 0 auto;
-      margin-top: 25px;
+      margin-top: 13px;
     }
   }
 }
@@ -108,6 +108,10 @@
     padding: 40px 30px;
   }
 
+  @include vp-767 {
+    padding: 35px 30px;
+  }
+
   p {
     font-weight: 500;
     font-size: 18px;
@@ -120,6 +124,10 @@
       text-align: center;
     }
   }
+
+  button {
+    padding: 11px;
+  }
 }
 
 .booking__form-list {
@@ -130,6 +138,10 @@
   flex-direction: column;
   gap: 21px;
   margin-top: 27px;
+
+  @include vp-767 {
+    margin-top: 28px;
+  }
 }
 
 .booking__form-item {
@@ -150,19 +162,25 @@
 
 .booking__checkbox {
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   position: relative;
+  padding-left: 23px;
+
+  @include vp-767 {
+    padding-left: 27px;
+    margin-bottom: 25px;
+  }
 
   label {
+    display: block;
     font-weight: 400;
     font-size: 10px;
     line-height: 13px;
     color: $color-extra-light-grey;
-    padding-left: 23px;
 
     @include vp-767 {
       line-height: 12px;
-      width: 162px;
+      width: 150px;
     }
   }
 
@@ -178,11 +196,15 @@
     height: 18px;
     box-sizing: border-box;
     background-color: $color-extra-light-grey;
-
     background-image: url("../../img/booking/checkbox-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 10px 6px;
+
+    @include vp-767 {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   input:not(:checked) + label::before {

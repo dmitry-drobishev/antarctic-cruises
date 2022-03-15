@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
+    <meta name="description" content="сайт бронирования круиза в Антарктику">
     <title>Круизы в Антарктику</title>
+    <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
 
+    <div class="wrapper">
+
+      <header class="header">
         <picture>
           <source media="(max-width: 767px)" srcset="./img/header/header-mobile.webp 1x, ./img/header/header-mobile@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="./img/header/header-mobile.jpg 1x, ./img/header/header-mobile@2x.jpg 2x">
@@ -49,16 +51,17 @@
             </ul>
           </nav>
         </div>
+
         <div class="header__promo">
-          <h2>Круизы в Антарктику</h2>
+          <h2>Круизы в&nbsp;Антарктику</h2>
           <p>Волшебный мир айсбергов и пингвинов</p>
         </div>
       </header>
-      <main>
 
+      <main>
         <section class="about">
           <div class="about__information">
-            <h3>Путешествие на край Земли</h3>
+            <h3>Путешествие на&nbsp;край Земли</h3>
             <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
           </div>
 
@@ -88,20 +91,20 @@
             <ul class="advantages__list">
               <li class="advantages__item advantages__item--cruise">
                 <img src="./img/advantages/boat-icon.svg" width="27" height="32"  alt="иконка круизного лайнера">
-                <h3>Небольшой круизный лайнер</h3>
-                <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
+                <h3>Небольшой круизный&nbsp;лайнер</h3>
+                <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и даст возможность насладиться видами и природой.</p>
               </li>
 
               <li class="advantages__item advantages__item--allinclusive">
                 <img src="./img/advantages/all-inclusive-icon.svg" width="38" height="21"  alt="иконка галочек">
-                <h3>Система все&nbsp;включено</h3>
-                <p>Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24&nbsp;часа.</p>
+                <h3>Система<br> все&nbsp;включено</h3>
+                <p>Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для&nbsp;вас 24&nbsp;часа.</p>
               </li>
 
               <li class="advantages__item advantages__item--zodiac">
                 <img src="./img/advantages/speedboat-icon.svg" width="42" height="15"  alt="иконка катера">
-                <h3>Экскурсионные туры на Zodiac</h3>
-                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
+                <h3>Экскурсионные<br> туры на Zodiac</h3>
+                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа&nbsp;Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
               </li>
             </ul>
           </div>
@@ -458,35 +461,35 @@
           <div class="booking__wrapper">
             <div class="booking__title">
               <h2>Раннее бронирование</h2>
-              <p>Забронируйте тур за 3-6 месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
+              <p>Забронируйте тур за&nbsp;3&#8205;-&#8205;6&nbsp;месяцев до&nbsp;даты выезда и сэкономьте до 50%</p>
             </div>
 
             <div class="booking__form">
 
               <form action="https://echo.htmlacademy.ru/courses" method="get" target="_blank">
 
-                <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+                <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
 
                 <ul class="booking__form-list">
 
                   <li class="booking__form-item">
                     <label class="visually-hidden" for="name">Имя</label>
-                    <input type="text" id="name" name="name_user" placeholder="Имя">
+                    <input type="text" id="name" name="name_user" placeholder="Имя" required>
                   </li>
 
                   <li class="booking__form-item">
                     <label class="visually-hidden" for="phone">Телефон</label>
-                    <input type="tel" id="phone" name="phone-number" placeholder="Телефон">
+                    <input type="tel" id="phone" name="phone-number" placeholder="Телефон" required>
                   </li>
 
                   <li class="booking__form-item">
                     <label class="visually-hidden" for="mail">E-mail</label>
-                    <input type="email" id="mail" name="e-mail" placeholder="Email">
+                    <input type="email" id="mail" name="e-mail" placeholder="Email" required>
                   </li>
                 </ul>
 
                 <div class="booking__checkbox">
-                  <input type="checkbox" id="personal-data" name="personal-data-checkbox" checked>
+                  <input type="checkbox" id="personal-data" name="personal-data-checkbox" checked required>
                   <label for="personal-data">Я согласен на обработку моих персональных данных</label>
                 </div>
 
@@ -514,13 +517,15 @@
           </div>
 
           <div class="contacts__information">
-            <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам в&nbsp;офис и мы вам все расскажем.</p>
+            <p>У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
             <address>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</address>
             <a href="tel:+78002000000">8-800-200-00-00</a>
           </div>
         </section>
       </main>
+
       <footer class="page-footer">
+
         <div class="page-footer__wrapper">
           <a href="index.html">
             <svg class="page-footer__logo" width="70" height="38">

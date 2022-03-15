@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    padding: 65px 25px;
+    padding: 55px 25px 65px 25px;
   }
 
   h2 {
@@ -46,6 +46,10 @@
     margin-top: 49px;
     justify-content: center;
   }
+
+  @include vp-767 {
+    margin-top: 32px;
+  }
 }
 
 .cruises__item {
@@ -75,6 +79,11 @@
       bottom: 27px;
       left: 35px;
     }
+
+    @include vp-767 {
+      bottom: 17px;
+      left: 25px;
+    }
   }
 
   img {
@@ -103,7 +112,7 @@
   min-height: 386px;
   background-color: $color-extra-dark;
   color: $color-extra-light-grey;
-  padding: 28px 26px;
+  padding: 28px 26px 80px 26px;
 
   &:focus-within {
     opacity: 1;
@@ -113,6 +122,24 @@
 
   h3 {
     position: static;
+  }
+
+  a {
+    position: absolute;
+    bottom: 33px;
+    left: 25px;
+    width: 210px;
+    padding: 10px;
+
+    @include vp-1279 {
+      width: 239px;
+      left: 35px;
+    }
+
+    @include vp-767 {
+      width: 220px;
+      left: 25px;
+    }
   }
 }
 

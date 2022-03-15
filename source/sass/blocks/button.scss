@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 13px;
+  padding: 12px;
   border: none;
   background-color: $color-extra-light-grey;
   font-family: $ff-montserrat;
@@ -12,7 +12,7 @@
   cursor: pointer;
   text-align: center;
 
-  @media(min-width: $vp-768) {
+  @media (min-width: $vp-768) {
     &:hover {
       opacity: 0.7;
     }

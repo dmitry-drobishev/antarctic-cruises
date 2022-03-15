@@ -940,7 +940,7 @@ button,
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 40px;
+  margin-left: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1006,6 +1006,12 @@ button,
   display: block;
   width: 560px;
   height: 301px;
+}
+
+.about__information {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .about__information h3 {
@@ -1090,6 +1096,14 @@ button,
   margin: 0;
 }
 
+.advantages__item h3 br {
+  display: none;
+}
+
+.advantages__item .advantages__item--allinclusive p br {
+  display: block;
+}
+
 .advantages__item p {
   font-weight: 400;
   font-size: 14px;
@@ -1126,7 +1140,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 100px;
-  padding: 120px 0 115px 0;
+  padding: 118px 0 117px 0;
 }
 
 .contacts__map-wrapper {
@@ -1257,7 +1271,7 @@ button,
   min-height: 386px;
   background-color: #011c40;
   color: #f9fbfd;
-  padding: 28px 26px;
+  padding: 28px 26px 80px 26px;
 }
 
 .cruises__booking:focus-within {
@@ -1268,6 +1282,14 @@ button,
 
 .cruises__booking h3 {
   position: static;
+}
+
+.cruises__booking a {
+  position: absolute;
+  bottom: 33px;
+  left: 25px;
+  width: 210px;
+  padding: 10px;
 }
 
 .cruises__booking-list {
@@ -1373,6 +1395,10 @@ button,
   margin: 0;
 }
 
+.booking__form button {
+  padding: 11px;
+}
+
 .booking__form-list {
   list-style: none;
   margin: 0;
@@ -1432,16 +1458,17 @@ button,
 
 .booking__checkbox {
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   position: relative;
+  padding-left: 23px;
 }
 
 .booking__checkbox label {
+  display: block;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
   color: #f9fbfd;
-  padding-left: 23px;
 }
 
 .booking__checkbox input {
@@ -1469,7 +1496,7 @@ button,
 
 .button {
   display: block;
-  padding: 13px;
+  padding: 12px;
   border: none;
   background-color: #f9fbfd;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1644,6 +1671,8 @@ button,
   }
 
   .about__information {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     position: relative;
     top: -8px;
   }
@@ -1696,6 +1725,10 @@ button,
     line-height: 25px;
   }
 
+  .advantages__item .advantages__item--allinclusive p br {
+    display: none;
+  }
+
   .advantages__item--cruise img {
     width: 21px;
     height: 26px;
@@ -1719,10 +1752,7 @@ button,
     -ms-flex-align: start;
     align-items: flex-start;
     width: auto;
-    padding-top: 100px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-bottom: 96px;
+    padding: 100px 45px 96px 45px;
     gap: 30px;
   }
 
@@ -1740,12 +1770,12 @@ button,
     margin-top: 65px;
   }
 
-  .contacts__information address::before {
-    top: 7px;
+  .contacts__information address {
+    margin-top: 28px;
   }
 
-  .contacts__information address {
-    margin-top: 27px;
+  .contacts__information address::before {
+    top: 7px;
   }
 
   .cruises {
@@ -1776,6 +1806,11 @@ button,
 
   .cruises__item img {
     width: 309px;
+  }
+
+  .cruises__booking a {
+    width: 239px;
+    left: 35px;
   }
 
   .booking img {
@@ -1855,13 +1890,13 @@ button,
   .header__nav--open {
     margin: 0;
     position: absolute;
-    width: 280px;
+    width: 285px;
     height: 100%;
     right: 0;
     top: 0;
     z-index: 10;
     background-color: #f9fbfd;
-    padding-top: 85px;
+    padding-top: 75px;
   }
 
   .header__nav--close {
@@ -1888,8 +1923,8 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 10px;
-    padding-left: 25px;
+    gap: 8px;
+    padding-left: 15px;
   }
 
   .header__nav-item a {
@@ -1899,14 +1934,20 @@ button,
     padding: 10px;
   }
 
+  .header__promo {
+    padding-left: 15px;
+  }
+
   .header__promo h2 {
     font-size: 36px;
     line-height: 45px;
+    margin-top: 115px;
   }
 
   .header__promo p {
     font-size: 16px;
     line-height: 22px;
+    width: 210px;
   }
 
   .header__toggle {
@@ -1929,7 +1970,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 30px;
+    gap: 18px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -1946,6 +1987,11 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 7px;
+  }
+
+  .page-footer__nav-item a {
+    padding-left: 0;
   }
 
   .page-footer__social-list {
@@ -1953,11 +1999,11 @@ button,
   }
 
   .about {
-    padding: 65px 15px 40px 15px;
+    padding: 65px 15px 65px 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
+    gap: 25px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1989,7 +2035,7 @@ button,
   }
 
   .advantages__wrapper {
-    padding: 60px 15px;
+    padding: 57px 15px;
   }
 
   .advantages__list {
@@ -2004,13 +2050,17 @@ button,
     min-height: 250px;
   }
 
+  .advantages__item h3 br {
+    display: block;
+  }
+
   .contacts {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 43px;
-    padding: 65px 15px 65px 15px;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    gap: 37px;
+    padding: 58px 15px 60px 15px;
   }
 
   .contacts__map-wrapper img {
@@ -2023,8 +2073,16 @@ button,
     height: 316px;
   }
 
+  .contacts__information {
+    margin-top: 0;
+  }
+
+  .contacts__information address {
+    margin-top: 26px;
+  }
+
   .cruises {
-    padding: 65px 25px;
+    padding: 55px 25px 65px 25px;
   }
 
   .cruises h2 {
@@ -2032,12 +2090,26 @@ button,
     height: 36px;
   }
 
+  .cruises__list {
+    margin-top: 32px;
+  }
+
   .cruises__item {
     width: 270px;
   }
 
+  .cruises__item h3 {
+    bottom: 17px;
+    left: 25px;
+  }
+
   .cruises__item img {
     width: 270px;
+  }
+
+  .cruises__booking a {
+    width: 220px;
+    left: 25px;
   }
 
   .booking img {
@@ -2047,8 +2119,8 @@ button,
   }
 
   .booking__wrapper {
-    padding: 65px 15px 0 15px;
-    gap: 40px;
+    padding: 59px 15px 0 15px;
+    gap: 35px;
     height: 760px;
   }
 
@@ -2064,7 +2136,7 @@ button,
     line-height: 22px;
     width: 260px;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 13px;
   }
 
   .booking__form {
@@ -2073,13 +2145,31 @@ button,
     padding: 40px 30px;
   }
 
+  .booking__form {
+    padding: 35px 30px;
+  }
+
   .booking__form p {
     line-height: 25px;
     text-align: center;
   }
 
+  .booking__form-list {
+    margin-top: 28px;
+  }
+
+  .booking__checkbox {
+    padding-left: 27px;
+    margin-bottom: 25px;
+  }
+
   .booking__checkbox label {
     line-height: 12px;
-    width: 162px;
+    width: 150px;
+  }
+
+  .booking__checkbox input + label::before {
+    width: 20px;
+    height: 20px;
   }
 }
