@@ -11,6 +11,16 @@
   width: 100%;
   cursor: pointer;
   text-align: center;
+  user-select: none;
+
+  &:disabled {
+    opacity: 0.2;
+    cursor: auto;
+
+    &:hover {
+      opacity: 0.2;
+    }
+  }
 
   @media (min-width: $vp-768) {
     &:hover {
@@ -18,7 +28,7 @@
     }
 
     &:active {
-      opacity: 0.3;
+      opacity: 0.5;
     }
   }
 }

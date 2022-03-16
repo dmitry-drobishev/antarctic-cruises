@@ -16,6 +16,7 @@
 
   a {
     cursor: pointer;
+    user-select: none;
 
     @media (min-width: $vp-768) {
       &:hover {

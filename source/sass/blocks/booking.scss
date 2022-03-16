@@ -150,6 +150,7 @@
     background-color: $color-extra-light-grey;
     padding: 13px 16px;
     width: 100%;
+    color: $color-extra-dark;
 
     &::placeholder {
       font-weight: 400;
@@ -164,23 +165,24 @@
   margin-top: 20px;
   margin-bottom: 34px;
   position: relative;
-  padding-left: 23px;
 
   @include vp-767 {
-    padding-left: 27px;
     margin-bottom: 25px;
   }
 
   label {
+    cursor: pointer;
     display: block;
     font-weight: 400;
     font-size: 10px;
     line-height: 13px;
     color: $color-extra-light-grey;
+    padding-left: 23px;
 
     @include vp-767 {
       line-height: 12px;
-      width: 150px;
+      width: 175px;
+      padding-left: 27px;
     }
   }
 

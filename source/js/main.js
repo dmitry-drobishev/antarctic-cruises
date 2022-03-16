@@ -1,8 +1,15 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {openMenu} from './modules/modals/menu';
+import {userCheckboxHandler, userTelHandler} from './modules/form';
 
 openMenu();
+
+const userTelInput = document.querySelector('.booking__form-item--tel input');
+userTelInput.addEventListener('input', userTelHandler);
+
+const userCheckboxInput = document.querySelector('.booking__checkbox input');
+userCheckboxInput.addEventListener('click', userCheckboxHandler);
 
 // ---------------------------------
 

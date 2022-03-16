@@ -785,6 +785,14 @@ button,
   height: 650px;
 }
 
+.header a {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .header img {
   position: absolute;
   width: 100vw;
@@ -915,6 +923,10 @@ button,
 
 .page-footer a {
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .page-footer__wrapper {
@@ -1419,6 +1431,7 @@ button,
   background-color: #f9fbfd;
   padding: 13px 16px;
   width: 100%;
+  color: #011c40;
 }
 
 .booking__form-item input::-webkit-input-placeholder {
@@ -1460,15 +1473,16 @@ button,
   margin-top: 20px;
   margin-bottom: 34px;
   position: relative;
-  padding-left: 23px;
 }
 
 .booking__checkbox label {
+  cursor: pointer;
   display: block;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
   color: #f9fbfd;
+  padding-left: 23px;
 }
 
 .booking__checkbox input {
@@ -1507,6 +1521,19 @@ button,
   width: 100%;
   cursor: pointer;
   text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button:disabled {
+  opacity: 0.2;
+  cursor: auto;
+}
+
+.button:disabled:hover {
+  opacity: 0.2;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1553,7 +1580,7 @@ button,
   }
 
   .button:active {
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }
 
@@ -2159,13 +2186,13 @@ button,
   }
 
   .booking__checkbox {
-    padding-left: 27px;
     margin-bottom: 25px;
   }
 
   .booking__checkbox label {
     line-height: 12px;
-    width: 150px;
+    width: 175px;
+    padding-left: 27px;
   }
 
   .booking__checkbox input + label::before {
