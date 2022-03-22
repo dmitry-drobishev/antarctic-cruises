@@ -1066,6 +1066,7 @@ button,
   z-index: -10;
   -o-object-fit: cover;
   object-fit: cover;
+  background-color: #E3ECF6;
 }
 
 .advantages__wrapper {
@@ -1196,7 +1197,7 @@ button,
   content: "";
   width: 18px;
   height: 22px;
-  background: url("/img/contacts/point-on-map-icon.svg") no-repeat;
+  background: url("../img/contacts/point-on-map-icon.svg") no-repeat;
   left: -28px;
 }
 
@@ -1215,7 +1216,7 @@ button,
   content: "";
   width: 18px;
   height: 18px;
-  background: url("/img/contacts/phone-icon.svg") no-repeat;
+  background: url("../img/contacts/phone-icon.svg") no-repeat;
   left: -28px;
 }
 
@@ -1498,7 +1499,7 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #f9fbfd;
-  background-image: url("../../img/booking/checkbox-icon.svg");
+  background-image: url("../img/booking/checkbox-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px 6px;

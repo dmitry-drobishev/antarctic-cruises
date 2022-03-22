@@ -98,7 +98,7 @@
       content: "";
       width: 18px;
       height: 22px;
-      background: url("/img/contacts/point-on-map-icon.svg") no-repeat;
+      background: url("../img/contacts/point-on-map-icon.svg") no-repeat;
       left: -28px;
 
       @include vp-1279 {
@@ -121,7 +121,7 @@
       content: "";
       width: 18px;
       height: 18px;
-      background: url("/img/contacts/phone-icon.svg") no-repeat;
+      background: url("../img/contacts/phone-icon.svg") no-repeat;
       left: -28px;
     }
 

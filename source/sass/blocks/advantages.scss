@@ -40,6 +40,7 @@
   top: 0;
   z-index: -10;
   object-fit: cover;
+  background-color: $color-background-grey;
 
   @include vp-1279 {
     height: 588px;
