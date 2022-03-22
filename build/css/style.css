@@ -803,6 +803,7 @@ button,
   object-fit: cover;
   -o-object-position: 50% 100%;
   object-position: 50% 100%;
+  background-color: rgba(0, 76, 224, 0.61);
 }
 
 .header__wrapper {
@@ -1209,6 +1210,9 @@ button,
   line-height: 24px;
   margin-left: 28px;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .contacts__information a::before {
@@ -1355,6 +1359,7 @@ button,
   -o-object-position: 50% 100%;
   object-position: 50% 100%;
   z-index: -100;
+  background-color: rgba(19, 137, 245, 0.47);
 }
 
 .booking__wrapper {
@@ -1487,8 +1492,8 @@ button,
   padding-left: 23px;
 }
 
-.booking__checkbox input {
-  display: none;
+.booking__checkbox input:focus + label::before {
+  border-color: orange;
 }
 
 .booking__checkbox input + label::before {
@@ -1505,6 +1510,8 @@ button,
   background-repeat: no-repeat;
   background-position: center;
   background-size: 11px 7px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
 .booking__checkbox input:not(:checked) + label::before {
@@ -2171,12 +2178,8 @@ button,
   }
 
   .booking__form {
-    width: 290px;
+    width: 100%;
     height: 460px;
-    padding: 40px 30px;
-  }
-
-  .booking__form {
     padding: 35px 30px;
   }
 
