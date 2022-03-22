@@ -190,12 +190,12 @@
     line-height: 66px;
     color: $color-extra-light-grey;
     margin: 0;
-    margin-top: 160px;
+    margin-top: 162px;
 
     @include vp-1279 {
       font-size: 50px;
       line-height: 61px;
-      margin-top: 220px;
+      margin-top: 218px;
     }
 
     @include vp-767 {
@@ -211,12 +211,12 @@
     line-height: 24px;
     color: $color-extra-light-grey;
     margin: 0;
-    margin-top: 15px;
+    margin-top: 13px;
 
     @include vp-1279 {
       font-size: 18px;
       line-height: 22px;
-      margin-top: 10px;
+      margin-top: 12px;
     }
 
     @include vp-767 {

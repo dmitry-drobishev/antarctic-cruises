@@ -405,7 +405,7 @@ template {
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/montserrat-semi-bold.woff2") format("woff2"), url("../fonts/montserrat-semi-bold.woff") format("woff");
+  src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
 }
 
 @font-face {
@@ -413,7 +413,7 @@ template {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/montserrat-bold-700.woff2") format("woff2"), url("../fonts/montserrat-bold-700.woff") format("woff");
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
 }
 
 *,
@@ -873,7 +873,7 @@ button,
   line-height: 66px;
   color: #f9fbfd;
   margin: 0;
-  margin-top: 160px;
+  margin-top: 162px;
 }
 
 .header__promo p {
@@ -882,7 +882,7 @@ button,
   line-height: 24px;
   color: #f9fbfd;
   margin: 0;
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .header__toggle {
@@ -1379,6 +1379,7 @@ button,
   font-size: 40px;
   line-height: 60px;
   margin: 0;
+  margin-top: -10px;
 }
 
 .booking__title p {
@@ -1387,7 +1388,7 @@ button,
   line-height: 27px;
   width: 360px;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .booking__form {
@@ -1471,8 +1472,8 @@ button,
 }
 
 .booking__checkbox {
-  margin-top: 20px;
-  margin-bottom: 34px;
+  margin-top: 23px;
+  margin-bottom: 32px;
   position: relative;
 }
 
@@ -1494,6 +1495,7 @@ button,
   content: "";
   position: absolute;
   left: 0;
+  top: -2px;
   width: 18px;
   height: 18px;
   -webkit-box-sizing: border-box;
@@ -1502,7 +1504,7 @@ button,
   background-image: url("../img/booking/checkbox-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 10px 6px;
+  background-size: 11px 7px;
 }
 
 .booking__checkbox input:not(:checked) + label::before {
@@ -1632,13 +1634,13 @@ button,
   .header__promo h2 {
     font-size: 50px;
     line-height: 61px;
-    margin-top: 220px;
+    margin-top: 218px;
   }
 
   .header__promo p {
     font-size: 18px;
     line-height: 22px;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   .page-footer {
@@ -1863,6 +1865,7 @@ button,
     font-size: 34px;
     line-height: 51px;
     text-align: center;
+    margin: 0;
   }
 
   .booking__title p {
