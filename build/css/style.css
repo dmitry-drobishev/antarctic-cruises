@@ -810,6 +810,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
   padding: 35px 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -936,6 +937,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 35px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -953,7 +955,6 @@ button,
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1080,11 +1081,16 @@ button,
   list-style: none;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-min-content -webkit-min-content -webkit-min-content;
+  -ms-grid-columns: min-content min-content min-content;
+  grid-template-columns: -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-columns: min-content min-content min-content;
   gap: 40px;
   margin-top: 50px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
@@ -1095,6 +1101,8 @@ button,
   padding: 80px 30px 25px 30px;
   position: relative;
   background-color: #f9fbfd;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
 }
 
 .advantages__item img {
@@ -1285,13 +1293,28 @@ button,
   top: 0;
   opacity: 0;
   width: 100%;
-  min-height: 386px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: #011c40;
   color: #f9fbfd;
-  padding: 28px 26px 80px 26px;
+  padding: 28px 25px 35px 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.cruises__booking:focus-within {
+.cruises__booking::-webkit-scrollbar {
+  width: 7px;
+  background-color: #011c40;
+}
+
+.cruises__booking::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #E3ECF6;
+}
+
+.cruises__booking:focus-within,
+.cruises__booking:focus {
   opacity: 1;
   pointer-events: auto;
   z-index: 100;
@@ -1302,11 +1325,9 @@ button,
 }
 
 .cruises__booking a {
-  position: absolute;
-  bottom: 33px;
-  left: 25px;
   width: 210px;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .cruises__booking-list {
@@ -1314,7 +1335,7 @@ button,
   padding: 0;
   list-style: none;
   margin-top: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1546,6 +1567,19 @@ button,
   opacity: 0.2;
 }
 
+.page-body--mask::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: rgba(0, 43, 102, 0.5);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1657,6 +1691,7 @@ button,
 
   .page-footer__wrapper {
     width: 678px;
+    gap: 20px;
   }
 
   .page-footer__logo {
@@ -1666,7 +1701,6 @@ button,
 
   .page-footer__nav-list {
     gap: 13px;
-    margin-left: 20px;
   }
 
   .page-footer__nav-item a {
@@ -1745,6 +1779,14 @@ button,
   .advantages__list {
     margin-top: 50px;
     gap: 30px;
+    -ms-grid-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
+  }
+
+  .advantages__list > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 
   .advantages__item {
@@ -1845,9 +1887,13 @@ button,
     width: 309px;
   }
 
+  .cruises__booking {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
   .cruises__booking a {
     width: 239px;
-    left: 35px;
   }
 
   .booking img {
@@ -1917,7 +1963,9 @@ button,
   }
 
   .header__wrapper {
+    gap: 0;
     padding: 20px 15px;
+    min-height: 62px;
   }
 
   .header__logo {
@@ -2020,7 +2068,6 @@ button,
   }
 
   .page-footer__nav-list {
-    margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2078,10 +2125,8 @@ button,
 
   .advantages__list {
     margin-top: 30px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
   }
 
   .advantages__item {
@@ -2145,9 +2190,13 @@ button,
     width: 270px;
   }
 
+  .cruises__booking {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .cruises__booking a {
     width: 220px;
-    left: 25px;
   }
 
   .booking img {

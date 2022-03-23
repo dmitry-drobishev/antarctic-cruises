@@ -2,6 +2,7 @@ const openMenu = () => {
   const navMain = document.querySelector('.header__nav');
   const navToggle = document.querySelector('.header__toggle');
   const headerLogo = document.querySelector('.header__logo');
+  const pageBody = document.querySelector('.page-body');
 
   navMain.classList.remove('header__nav--nojs');
   navToggle.classList.remove('header__toggle--nojs');
@@ -12,12 +13,16 @@ const openMenu = () => {
       navToggle.classList.remove('header__toggle--close');
       navToggle.classList.add('header__toggle--open');
       headerLogo.classList.add('header__logo--hidden');
+      pageBody.classList.add('scroll-lock');
+      pageBody.classList.add('page-body--mask');
     } else {
       navMain.classList.add('header__nav--close');
       navMain.classList.remove('header__nav--open');
       navToggle.classList.add('header__toggle--close');
       navToggle.classList.remove('header__toggle--open');
       headerLogo.classList.remove('header__logo--hidden');
+      pageBody.classList.remove('scroll-lock');
+      pageBody.classList.remove('page-body--mask');
     }
   });
 };

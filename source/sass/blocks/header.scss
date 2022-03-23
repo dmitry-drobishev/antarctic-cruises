@@ -46,6 +46,7 @@
 
 .header__wrapper {
   display: flex;
+  gap: 30px;
   padding: 35px 0;
   justify-content: space-between;
   width: $desktop-content;
@@ -59,7 +60,9 @@
   }
 
   @include vp-767 {
+    gap: 0;
     padding: 20px 15px;
+    min-height: 62px;
   }
 }
 
