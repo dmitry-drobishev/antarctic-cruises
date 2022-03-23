@@ -1973,7 +1973,7 @@ button,
     height: 22px;
   }
 
-  .header__nav--open {
+  .header__nav {
     margin: 0;
     position: absolute;
     width: 285px;
@@ -1985,12 +1985,19 @@ button,
     padding-top: 75px;
   }
 
+  .header__nav--open {
+    display: block;
+  }
+
   .header__nav--close {
     display: none;
   }
 
   .header__nav--nojs {
     display: block;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
   }
 
   .header__nav::before {
