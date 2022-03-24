@@ -1,7 +1,7 @@
 .header {
   height: 650px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     height: 638px;
   }
 
@@ -34,7 +34,7 @@
     object-position: 50% 100%;
     background-color: $color-background-header;
 
-    @include vp-1279 {
+    @include vp-1023 {
       height: 638px;
     }
 
@@ -47,12 +47,20 @@
 .header__wrapper {
   display: flex;
   gap: 30px;
-  padding: 35px 0;
   justify-content: space-between;
   width: $desktop-content;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   @include vp-1279 {
+    width: auto;
+    padding-left: $desktop-padding-asade;
+    padding-right: $desktop-padding-asade;
+  }
+
+  @include vp-1023 {
     width: 768px;
     padding: $tablet-padding;
     box-sizing: border-box;
@@ -71,7 +79,7 @@
   width: 70px;
   height: 38px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: 38px;
     height: 20px;
   }
@@ -138,7 +146,7 @@
   gap: 33px;
   flex-wrap: wrap;
 
-  @include vp-1279 {
+  @include vp-1023 {
     gap: 24px;
   }
 
@@ -161,7 +169,7 @@
     color: $color-extra-light-grey;
     padding-top: 10px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       font-size: 14px;
       line-height: 17px;
       padding-top: 3px;
@@ -177,11 +185,11 @@
 }
 
 .header__promo {
-  width: $desktop-content;
+  max-width: $desktop-content;
   margin: 0 auto;
   padding-left: 95px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: auto;
     margin-left: 0;
     padding: 0 45px;
@@ -199,7 +207,7 @@
     margin: 0;
     margin-top: 162px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       font-size: 50px;
       line-height: 61px;
       margin-top: 218px;
@@ -220,7 +228,7 @@
     margin: 0;
     margin-top: 13px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       font-size: 18px;
       line-height: 22px;
       margin-top: 12px;

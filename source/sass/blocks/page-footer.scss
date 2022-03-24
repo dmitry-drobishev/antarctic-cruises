@@ -5,7 +5,7 @@
   min-height: 138px;
   padding: 50px 0;
 
-  @include vp-1279 {
+  @include vp-1023 {
     min-height: 120px;
     padding: 45px 0;
   }
@@ -39,8 +39,15 @@
   justify-content: space-between;
 
   @include vp-1279 {
+    width: auto;
+    padding-left: $desktop-padding-asade;
+    padding-right: $desktop-padding-asade;
+  }
+
+  @include vp-1023 {
     width: $tablet-content;
     gap: 20px;
+    padding: 0;
   }
 
   @include vp-767 {
@@ -55,7 +62,7 @@
   width: 70px;
   height: 38px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: 38px;
     height: 28px;
   }
@@ -74,7 +81,7 @@
   flex-wrap: wrap;
   gap: 23px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     gap: 13px;
   }
 
@@ -93,7 +100,7 @@
     color: $color-extra-light-grey;
     padding: 5px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       font-size: 12px;
       line-height: 15px;
     }
@@ -113,7 +120,7 @@
   align-items: center;
   gap: 33px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     gap: 23px;
     margin-top: 5px;
   }
@@ -126,14 +133,13 @@
 .page-footer__social-item {
   a {
     display: block;
-    // padding: 5px;
   }
 
   &--facebook svg {
     width: 11px;
     height: 20px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       width: 9px;
       height: 16px;
     }
@@ -143,7 +149,7 @@
     width: 20px;
     height: 20px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       width: 16px;
       height: 16px;
     }
@@ -153,7 +159,7 @@
     width: 20px;
     height: 16px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       width: 16px;
       height: 13px;
     }

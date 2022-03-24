@@ -7,6 +7,12 @@
 
   @include vp-1279 {
     width: auto;
+    padding-right: $desktop-padding-asade;
+    padding-left: $desktop-padding-asade;
+  }
+
+  @include vp-1023 {
+    // width: auto;
     padding: 90px 60px 100px 60px;
   }
 
@@ -21,7 +27,7 @@
     font-size: 28px;
     line-height: 42px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       font-size: 26px;
       line-height: 39px;
     }
@@ -41,10 +47,10 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 
-  @include vp-1279 {
+  @include vp-1023 {
     margin-top: 49px;
-    justify-content: center;
   }
 
   @include vp-767 {
@@ -57,7 +63,7 @@
   height: 386px;
   position: relative;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: 309px;
   }
 
@@ -75,7 +81,7 @@
     left: 30px;
     bottom: 22px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       bottom: 27px;
       left: 35px;
     }
@@ -94,7 +100,7 @@
     width: 260px;
     height: 386px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       width: 309px;
     }
 
@@ -127,7 +133,7 @@
     background-color: $color-background-grey;
   }
 
-  @include vp-1279 {
+  @include vp-1023 {
     padding-left: 35px;
     padding-right: 35px;
   }
@@ -152,7 +158,7 @@
     padding: 10px;
     margin: 0 auto;
 
-    @include vp-1279 {
+    @include vp-1023 {
       width: 239px;
     }
 

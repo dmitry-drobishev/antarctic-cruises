@@ -4,7 +4,7 @@
   margin: 0 auto;
   min-height: 562px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     min-height: 588px;
   }
 
@@ -19,7 +19,7 @@
     line-height: 42px;
     margin: 0;
 
-    @include vp-1279 {
+    @include vp-1023 {
       font-size: 26px;
       line-height: 39px;
     }
@@ -42,7 +42,7 @@
   object-fit: cover;
   background-color: $color-background-grey;
 
-  @include vp-1279 {
+  @include vp-1023 {
     height: 588px;
   }
 
@@ -54,9 +54,15 @@
 .advantages__wrapper {
   width: $desktop-content;
   margin: 0 auto;
-  padding: 110px 0 110px 0;
+  padding: 110px 0 45px 0;
 
   @include vp-1279 {
+    width: auto;
+    padding-left: $desktop-padding-asade;
+    padding-right: $desktop-padding-asade;
+  }
+
+  @include vp-1023 {
     width: auto;
     padding: 90px 45px 45px 45px;
   }
@@ -71,12 +77,13 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: min-content min-content min-content;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
   gap: 40px;
   margin-top: 50px;
   flex-wrap: wrap;
 
-  @include vp-1279 {
+  @include vp-1023 {
     margin-top: 50px;
     gap: 30px;
     grid-template-columns: auto auto auto;
@@ -105,6 +112,11 @@
 
   @include vp-1279 {
     width: auto;
+    min-width: 274px;
+  }
+
+  @include vp-1023 {
+    width: auto;
     min-width: 206px;
     min-height: 310px;
     padding: 70px 15px 17px 20px;
@@ -119,7 +131,7 @@
     position: absolute;
     left: 30px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       left: 20px;
     }
   }
@@ -130,7 +142,7 @@
     line-height: 27px;
     margin: 0;
 
-    @include vp-1279 {
+    @include vp-1023 {
       line-height: 25px;
     }
 
@@ -148,7 +160,7 @@
       br {
         display: block;
 
-        @include vp-1279 {
+        @include vp-1023 {
           display: none;
         }
       }
@@ -169,7 +181,7 @@
       height: 32px;
       top: 30px;
 
-      @include vp-1279 {
+      @include vp-1023 {
         width: 21px;
         height: 26px;
         top: 24px;
@@ -183,7 +195,7 @@
       height: 21px;
       top: 35px;
 
-      @include vp-1279 {
+      @include vp-1023 {
         width: 33px;
         height: 19px;
         top: 28px;
@@ -197,7 +209,7 @@
       height: 15px;
       top: 38px;
 
-      @include vp-1279 {
+      @include vp-1023 {
         width: 38px;
         height: 13px;
         top: 31px;

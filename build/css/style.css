@@ -811,12 +811,15 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  padding: 35px 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .header__logo {
@@ -864,7 +867,7 @@ button,
 }
 
 .header__promo {
-  width: 1160px;
+  max-width: 1160px;
   margin: 0 auto;
   padding-left: 95px;
 }
@@ -1014,6 +1017,8 @@ button,
   grid-template-columns: auto 560px;
   gap: 88px;
   padding: 120px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .about img {
@@ -1074,7 +1079,7 @@ button,
 .advantages__wrapper {
   width: 1160px;
   margin: 0 auto;
-  padding: 110px 0 110px 0;
+  padding: 110px 0 45px 0;
 }
 
 .advantages__list {
@@ -1083,10 +1088,11 @@ button,
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: -webkit-min-content -webkit-min-content -webkit-min-content;
-  -ms-grid-columns: min-content min-content min-content;
-  grid-template-columns: -webkit-min-content -webkit-min-content -webkit-min-content;
-  grid-template-columns: min-content min-content min-content;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 40px;
   margin-top: 50px;
   -ms-flex-wrap: wrap;
@@ -1260,6 +1266,9 @@ button,
   gap: 30px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .cruises__item {
@@ -1400,6 +1409,12 @@ button,
   height: 555px;
 }
 
+.booking__title {
+  -webkit-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
 .booking__title h2 {
   font-weight: 700;
   font-size: 40px;
@@ -1425,6 +1440,8 @@ button,
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #011c40;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
 }
 
 .booking__form p {
@@ -1635,6 +1652,69 @@ button,
 }
 
 @media (max-width: 1279px) {
+  .header__wrapper {
+    width: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .page-footer__wrapper {
+    width: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .about {
+    width: auto;
+    gap: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .advantages__wrapper {
+    width: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .advantages__list > * {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .advantages__item {
+    width: auto;
+    min-width: 274px;
+  }
+
+  .contacts {
+    width: auto;
+    padding-right: 60px;
+    padding-left: 60px;
+    gap: 50px;
+  }
+
+  .cruises {
+    width: auto;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .booking__wrapper {
+    width: auto;
+  }
+
+  .booking__title p {
+    width: auto;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 24px;
+  }
+
   .header {
     height: 638px;
   }
@@ -1692,6 +1772,7 @@ button,
   .page-footer__wrapper {
     width: 678px;
     gap: 20px;
+    padding: 0;
   }
 
   .page-footer__logo {
@@ -1783,12 +1864,6 @@ button,
     grid-template-columns: auto auto auto;
   }
 
-  .advantages__list > * {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-  }
-
   .advantages__item {
     width: auto;
     min-width: 206px;
@@ -1830,7 +1905,6 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    width: auto;
     padding: 100px 45px 96px 45px;
     gap: 30px;
   }
@@ -1858,7 +1932,6 @@ button,
   }
 
   .cruises {
-    width: auto;
     padding: 90px 60px 100px 60px;
   }
 
@@ -1869,9 +1942,6 @@ button,
 
   .cruises__list {
     margin-top: 49px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
 
   .cruises__item {
@@ -1901,7 +1971,6 @@ button,
   }
 
   .booking__wrapper {
-    width: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1914,6 +1983,12 @@ button,
     height: 805px;
   }
 
+  .booking__title {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+  }
+
   .booking__title h2 {
     font-size: 34px;
     line-height: 51px;
@@ -1922,17 +1997,12 @@ button,
   }
 
   .booking__title p {
+    width: 360px;
     margin: 0 auto;
     margin-top: 3px;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
-  }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 24px;
   }
 }
 

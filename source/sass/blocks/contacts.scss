@@ -7,8 +7,14 @@
   padding: 118px 0 117px 0;
 
   @include vp-1279 {
-    align-items: flex-start;
     width: auto;
+    padding-right: $desktop-padding-asade;
+    padding-left: $desktop-padding-asade;
+    gap: 50px;
+  }
+
+  @include vp-1023 {
+    align-items: flex-start;
     padding: 100px 45px 96px 45px;
     gap: 30px;
   }
@@ -31,7 +37,7 @@
     width: 560px;
     height: 306px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       width: 324px;
       height: 335px;
     }
@@ -48,7 +54,7 @@
   height: 306px;
   border: none;
 
-  @include vp-1279 {
+  @include vp-1023 {
     width: 324px;
     height: 335px;
   }
@@ -60,7 +66,7 @@
 }
 
 .contacts__information {
-  @include vp-1279 {
+  @include vp-1023 {
     margin-top: 65px;
   }
 
@@ -85,7 +91,7 @@
     line-height: 24px;
     position: relative;
 
-    @include vp-1279 {
+    @include vp-1023 {
       margin-top: 28px;
     }
 
@@ -101,7 +107,7 @@
       background: url("../img/contacts/point-on-map-icon.svg") no-repeat;
       left: -28px;
 
-      @include vp-1279 {
+      @include vp-1023 {
         top: 7px;
       }
     }

@@ -5,8 +5,16 @@
   grid-template-columns: auto 560px;
   gap: 88px;
   padding: 120px 0;
+  box-sizing: border-box;
 
   @include vp-1279 {
+    width: auto;
+    gap: 40px;
+    padding-left: $desktop-padding-asade;
+    padding-right: $desktop-padding-asade;
+  }
+
+  @include vp-1023 {
     gap: 30px;
     width: auto;
     padding: 100px 45px 85px 45px;
@@ -25,7 +33,7 @@
     width: 560px;
     height: 301px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       width: 324px;
       height: 264px;
     }
@@ -41,7 +49,7 @@
 .about__information {
   align-self: center;
 
-  @include vp-1279 {
+  @include vp-1023 {
     align-self: flex-start;
     position: relative;
     top: -8px;
@@ -53,7 +61,7 @@
     line-height: 42px;
     margin: 0;
 
-    @include vp-1279 {
+    @include vp-1023 {
       font-size: 26px;
       line-height: 36px;
       width: 220px;
@@ -72,7 +80,7 @@
     margin: 0;
     margin-top: 24px;
 
-    @include vp-1279 {
+    @include vp-1023 {
       margin-top: 15px;
     }
   }
