@@ -2006,7 +2006,7 @@ button,
     content: "";
     width: 42px;
     height: 22px;
-    background: url("/img/header/menu-icon.svg") no-repeat;
+    background: url("../img/header/menu-icon.svg") no-repeat;
     top: 20px;
     left: 15px;
   }
