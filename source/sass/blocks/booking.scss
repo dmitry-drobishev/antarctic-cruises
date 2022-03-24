@@ -126,8 +126,6 @@
     padding: 35px 30px;
   }
 
-
-
   p {
     font-weight: 500;
     font-size: 18px;
@@ -202,11 +200,6 @@
     }
   }
 
-  input:focus + label::before {
-    border-color: orange;
-
-  }
-
   input + label::before {
     content: "";
     position: absolute;
@@ -220,9 +213,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 11px 7px;
-    border: 2px solid transparent;
-    box-sizing: border-box;
-
 
     @include vp-767 {
       width: 20px;

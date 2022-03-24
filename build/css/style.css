@@ -1073,7 +1073,7 @@ button,
   z-index: -10;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #E3ECF6;
+  background-color: #e3ecf6;
 }
 
 .advantages__wrapper {
@@ -1319,7 +1319,7 @@ button,
 
 .cruises__booking::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  background-color: #E3ECF6;
+  background-color: #e3ecf6;
 }
 
 .cruises__booking:focus-within,
@@ -1530,10 +1530,6 @@ button,
   padding-left: 23px;
 }
 
-.booking__checkbox input:focus + label::before {
-  border-color: orange;
-}
-
 .booking__checkbox input + label::before {
   content: "";
   position: absolute;
@@ -1548,8 +1544,6 @@ button,
   background-repeat: no-repeat;
   background-position: center;
   background-size: 11px 7px;
-  border: 2px solid transparent;
-  box-sizing: border-box;
 }
 
 .booking__checkbox input:not(:checked) + label::before {

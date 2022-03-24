@@ -23,4 +23,3 @@ const userCheckboxHandler = () => {
 };
 
 export {userTelHandler, userCheckboxHandler};
-

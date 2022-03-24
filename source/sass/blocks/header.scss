@@ -102,13 +102,14 @@
   @include vp-767 {
     margin: 0;
     position: absolute;
-      width: 285px;
-      height: 100%;
-      right: 0;
-      top: 0;
-      z-index: 10;
-      background-color: $color-extra-light-grey;
-      padding-top: 75px;
+    width: 285px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: $color-extra-light-grey;
+    padding-top: 75px;
+
     &--open {
       display: block;
     }
