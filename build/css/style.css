@@ -900,7 +900,7 @@ button,
 
 .header__toggle--close {
   width: 24px;
-  height: 12px;
+  height: 14px;
   background-image: url("../img/header/burger.svg");
   background-repeat: no-repeat;
   background-position-x: center;
@@ -1031,6 +1031,8 @@ button,
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  position: relative;
+  top: -2px;
 }
 
 .about__information h3 {
@@ -1090,9 +1092,6 @@ button,
   display: grid;
   -ms-grid-columns: auto auto auto;
   grid-template-columns: auto auto auto;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   gap: 40px;
   margin-top: 50px;
   -ms-flex-wrap: wrap;
@@ -1236,6 +1235,7 @@ button,
   height: 18px;
   background: url("../img/contacts/phone-icon.svg") no-repeat;
   left: -28px;
+  top: 2px;
 }
 
 .cruises {
@@ -1543,7 +1543,7 @@ button,
   background-image: url("../img/booking/checkbox-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 11px 7px;
+  background-size: 12px 8px;
 }
 
 .booking__checkbox input:not(:checked) + label::before {
@@ -1781,11 +1781,12 @@ button,
   .page-footer__nav-item a {
     font-size: 12px;
     line-height: 15px;
+    padding-top: 4px;
   }
 
   .page-footer__social-list {
     gap: 23px;
-    margin-top: 5px;
+    margin-top: 4px;
   }
 
   .page-footer__social-item--facebook svg {
@@ -1819,7 +1820,6 @@ button,
   .about__information {
     -ms-flex-item-align: start;
     align-self: flex-start;
-    position: relative;
     top: -8px;
   }
 
@@ -1970,7 +1970,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 52px;
-    padding-top: 90px;
+    padding-top: 88px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
@@ -1993,7 +1993,7 @@ button,
   .booking__title p {
     width: 360px;
     margin: 0 auto;
-    margin-top: 3px;
+    margin-top: 5px;
     font-size: 18px;
     line-height: 27px;
     text-align: center;
@@ -2105,6 +2105,7 @@ button,
     font-size: 16px;
     line-height: 22px;
     width: 210px;
+    margin-top: 10px;
   }
 
   .header__toggle {
@@ -2112,7 +2113,7 @@ button,
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 25px;
+    top: 24px;
     right: 15px;
     background-color: transparent;
   }
@@ -2143,7 +2144,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 7px;
+    gap: 8px;
   }
 
   .page-footer__nav-item a {
@@ -2313,7 +2314,8 @@ button,
   }
 
   .booking__checkbox {
-    margin-bottom: 25px;
+    margin-top: 21px;
+    margin-bottom: 27px;
   }
 
   .booking__checkbox label {

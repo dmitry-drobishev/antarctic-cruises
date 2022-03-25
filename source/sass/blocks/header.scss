@@ -239,6 +239,7 @@
       font-size: 16px;
       line-height: 22px;
       width: 210px;
+      margin-top: 10px;
     }
   }
 }
@@ -251,7 +252,7 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 25px;
+    top: 24px;
     right: 15px;
     background-color: transparent;
   }
@@ -263,7 +264,7 @@
 
 .header__toggle--close {
   width: 24px;
-  height: 12px;
+  height: 14px;
   background-image: url("../img/header/burger.svg");
   background-repeat: no-repeat;
   background-position-x: center;
