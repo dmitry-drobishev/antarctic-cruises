@@ -1630,6 +1630,26 @@ button,
     opacity: 0.3;
   }
 
+  .booking__form-item input:hover {
+    opacity: 0.7;
+  }
+
+  .booking__form-item input:focus {
+    opacity: 1;
+  }
+
+  .booking__checkbox label:hover {
+    opacity: 0.1;
+  }
+
+  .booking__checkbox label:hover {
+    opacity: 0.7;
+  }
+
+  .booking__checkbox label:active {
+    opacity: 0.5;
+  }
+
   .button:hover {
     opacity: 0.7;
   }
@@ -2039,7 +2059,7 @@ button,
 
   .header__nav {
     margin: 0;
-    position: absolute;
+    position: fixed;
     width: 285px;
     height: 100%;
     right: 0;
@@ -2047,6 +2067,11 @@ button,
     z-index: 10;
     background-color: #f9fbfd;
     padding-top: 75px;
+    overflow: auto;
+  }
+
+  .header__nav::-webkit-scrollbar {
+    display: none;
   }
 
   .header__nav--open {

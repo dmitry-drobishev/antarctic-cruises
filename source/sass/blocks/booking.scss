@@ -172,6 +172,16 @@
       line-height: 21px;
       color: $color-placeholder-text;
     }
+
+    @media (min-width: $vp-768) {
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:focus {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -198,6 +208,22 @@
       line-height: 12px;
       width: 175px;
       padding-left: 27px;
+    }
+
+    &:hover {
+      @media (min-width: $vp-768) {
+        opacity: 0.1;
+      }
+    }
+
+    @media (min-width: $vp-768) {
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
     }
   }
 
