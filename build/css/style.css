@@ -1067,7 +1067,8 @@ button,
 
 .advantages__background {
   width: 100%;
-  height: 562px;
+  height: 100%;
+  min-height: 562px;
   margin: 0 auto;
   display: block;
   position: absolute;
@@ -1081,7 +1082,7 @@ button,
 .advantages__wrapper {
   width: 1160px;
   margin: 0 auto;
-  padding: 110px 0 45px 0;
+  padding: 110px 0 110px 0;
 }
 
 .advantages__list {
@@ -1863,12 +1864,12 @@ button,
   }
 
   .advantages__background {
-    height: 588px;
+    min-height: 588px;
   }
 
   .advantages__wrapper {
     width: auto;
-    padding: 90px 45px 45px 45px;
+    padding: 90px 45px 90px 45px;
   }
 
   .advantages__list {
@@ -2213,7 +2214,7 @@ button,
   }
 
   .advantages__background {
-    height: 997px;
+    min-height: 997px;
   }
 
   .advantages__wrapper {

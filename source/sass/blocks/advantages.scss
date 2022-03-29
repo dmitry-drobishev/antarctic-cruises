@@ -33,7 +33,8 @@
 
 .advantages__background {
   width: 100%;
-  height: 562px;
+  height: 100%;
+  min-height: 562px;
   margin: 0 auto;
   display: block;
   position: absolute;
@@ -43,18 +44,18 @@
   background-color: $color-background-grey;
 
   @include vp-1023 {
-    height: 588px;
+    min-height: 588px;
   }
 
   @include vp-767 {
-    height: 997px;
+    min-height: 997px;
   }
 }
 
 .advantages__wrapper {
   width: $desktop-content;
   margin: 0 auto;
-  padding: 110px 0 45px 0;
+  padding: 110px 0 110px 0;
 
   @include vp-1279 {
     width: auto;
@@ -64,7 +65,7 @@
 
   @include vp-1023 {
     width: auto;
-    padding: 90px 45px 45px 45px;
+    padding: 90px 45px 90px 45px;
   }
 
   @include vp-767 {
