@@ -42,13 +42,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 50px;
-  // display: flex;
+  margin-top: 49px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 260px);
   row-gap: 30px;
   column-gap: 30px;
-  // flex-wrap: wrap;
   justify-content: center;
 
   @include vp-1023 {
@@ -182,9 +180,21 @@
   display: flex;
   flex-direction: column;
   gap: 11px;
+
+  @include vp-1023 {
+    gap: 0;
+  }
 }
 
 .cruises__booking-item {
+  @include vp-1023 {
+    margin-top: 11px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
   h4 {
     margin: 0;
     font-weight: 500;
