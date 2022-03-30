@@ -2,6 +2,7 @@ const navMain = document.querySelector('.header__nav');
 const navToggle = document.querySelector('.header__toggle');
 const headerLogo = document.querySelector('.header__logo');
 const pageBody = document.querySelector('.page-body');
+const headerWrapper = document.querySelector('.header__wrapper');
 
 const openMenu = () => {
   navMain.classList.remove('header__nav--close');
@@ -32,6 +33,7 @@ const closeMenu = () => {
 const mobileMenu = () => {
   navMain.classList.remove('header__nav--nojs');
   navToggle.classList.remove('header__toggle--nojs');
+  headerWrapper.classList.remove('header__wrapper--nojs');
   navToggle.addEventListener('click', function () {
     if (navMain.classList.contains('header__nav--close')) {
       openMenu();

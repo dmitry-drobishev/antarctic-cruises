@@ -12,7 +12,6 @@
   }
 
   @include vp-1023 {
-    // width: auto;
     padding: 90px 60px 100px 60px;
   }
 
@@ -44,17 +43,22 @@
   margin: 0;
   padding: 0;
   margin-top: 50px;
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  // display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 260px);
+  row-gap: 30px;
+  column-gap: 30px;
+  // flex-wrap: wrap;
   justify-content: center;
 
   @include vp-1023 {
     margin-top: 49px;
+    grid-template-columns: repeat(auto-fill, 309px);
   }
 
   @include vp-767 {
     margin-top: 32px;
+    grid-template-columns: repeat(auto-fill, 270px);
   }
 }
 
@@ -144,7 +148,7 @@
   }
 
   &:focus-within,
-  &:focus {
+  &:active {
     opacity: 1;
     pointer-events: auto;
     z-index: 100;

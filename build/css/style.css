@@ -991,9 +991,20 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 33px;
   -ms-flex-item-align: start;
   align-self: flex-start;
+}
+
+.page-footer__social-list:first-child {
+  margin-left: 0;
+}
+
+.page-footer__social-item {
+  margin-left: 33px;
+}
+
+.page-footer__social-item:first-of-type {
+  margin-left: 0;
 }
 
 .page-footer__social-item a {
@@ -1268,12 +1279,13 @@ button,
   margin: 0;
   padding: 0;
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 260px);
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1331,7 +1343,7 @@ button,
 }
 
 .cruises__booking:focus-within,
-.cruises__booking:focus {
+.cruises__booking:active {
   opacity: 1;
   pointer-events: auto;
   z-index: 100;
@@ -1817,8 +1829,11 @@ button,
   }
 
   .page-footer__social-list {
-    gap: 23px;
     margin-top: 4px;
+  }
+
+  .page-footer__social-item {
+    margin-left: 23px;
   }
 
   .page-footer__social-item--facebook svg {
@@ -1968,6 +1983,7 @@ button,
 
   .cruises__list {
     margin-top: 49px;
+    grid-template-columns: repeat(auto-fill, 309px);
   }
 
   .cruises__item {
@@ -2059,9 +2075,32 @@ button,
   }
 
   .header__wrapper {
+    width: auto;
     gap: 0;
     padding: 20px 15px;
     min-height: 62px;
+  }
+
+  .header__wrapper--nojs {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: -50px;
+  }
+
+  .header__wrapper--nojs .header__nav::before {
+    display: none;
+  }
+
+  .header__wrapper--nojs .header__logo {
+    position: relative;
+    top: 20px;
   }
 
   .header__logo {
@@ -2099,6 +2138,8 @@ button,
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
+    padding-top: 10px;
+    position: static;
   }
 
   .header__nav::before {
@@ -2284,6 +2325,7 @@ button,
 
   .cruises__list {
     margin-top: 32px;
+    grid-template-columns: repeat(auto-fill, 270px);
   }
 
   .cruises__item {
